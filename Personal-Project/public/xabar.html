@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
+    <link rel="icon" href="/images/mail.png" type="images/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <title>Xabar.kz</title>
 </head>
-<body>
-    
-    <nav class="flex justify-center space-x-20">
-        <a href="/dashboard" class="font-bold m-5 px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-        <a href="/team" class="font-bold m-5 px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Team</a>
-        <a href="/projects" class="font-bold m-5 px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Projects</a>
-        <a href="/reports" class="font-bold m-5 px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
-      </nav>
-      
+<body class="bg-cyan-400">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text-2xl font-[Poppins] font-bold cursor-pointer">
+                <img class="h-10 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsbLLY0d69sIz8fI9draolv3gvCkouXM9VOA&usqp=CAU" alt="logo">
+                Xabar
+            </span>
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-5 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+            </li>
+            <li class="mx-5 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Services</a>
+            </li>
+            <li class="mx-5 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a>
+            </li>
+            <li class="mx-5 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
+            </li>
+            <li class="mx-5 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Blog's</a>
+            </li>
+
+            <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2
+            mx-4 hover:bg-cyan-500 rounded">Get started</button>
+        </ul>
+    </nav>
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : 
+            (e.name = "menu", list.classList.remove('top-[80]'), list.classList.remove('opacity-100'))
+        } 
+    </script>
 </body>
 </html>
