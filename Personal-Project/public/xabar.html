@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,20 @@
     <link rel="icon" href="/images/mail.png" type="images/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="/src/main.css">
+    <script src="../node_modules//bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Xabar.kz</title>
 </head>
+
 <body class="bg-white-400">
     <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center">
             <span class="text-2xl font-[Poppins] font-bold cursor-pointer">
-                <img class="h-10 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsbLLY0d69sIz8fI9draolv3gvCkouXM9VOA&usqp=CAU" alt="logo">
+                <img class="h-12 ps-10 inline shadow-black-1000"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsbLLY0d69sIz8fI9draolv3gvCkouXM9VOA&usqp=CAU"
+                    alt="logo">
                 Xabar
             </span>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -41,15 +47,23 @@
             </li>
 
             <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2
-            mx-4 hover:bg-cyan-500 rounded">Get started</button>
+            mx-4 hover:bg-cyan-500 rounded shadow-lg shadow-cyan-500/50">Login</button>
         </ul>
     </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/" class="d-block w-100" alt="main">
+            </div>
+        </div>
+    </div>
     <script>
-        function Menu(e){
+        function Menu(e) {
             let list = document.querySelector('ul');
-            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : 
-            (e.name = "menu", list.classList.remove('top-[80]'), list.classList.remove('opacity-100'))
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) :
+                (e.name = "menu", list.classList.remove('top-[80]'), list.classList.remove('opacity-100'))
         } 
     </script>
 </body>
+
 </html>
