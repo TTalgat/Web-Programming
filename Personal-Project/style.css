@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Search */
+
+
+/* main class */
+.main {
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+/* Icon */
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.icon img {
+    padding-top: 15px;
+    margin-right: -20px;
+    float: left;
+    width: 50px;
+    height: 65px;
+}
+
+/* Logo */
+.logo {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', 'sans-serif';
+    padding-left: 20px;
+    text-align: center;
+    padding-top: 22px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    width: 600px;
+    float: right;
+    height: 70px;
+}
+
+/* List */
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 33px;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #8d8a8a;
+}
+
+/* fa store */
+.fa-solid {
+    margin-left: 30px;
+    margin-top: 33px;
+}
+
+.fa-solid:hover {
+    color: #8d8a8a;
+}
