@@ -5,7 +5,6 @@
 }
 
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -75,7 +74,7 @@ ul {
 
 ul li {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-top: 33px;
     font-size: 16px;
 }
@@ -92,12 +91,12 @@ ul li a:hover {
     color: #8d8a8a;
 }
 
-/* fa store */
-.fa-solid {
-    margin-left: 30px;
-    margin-top: 33px;
-}
-
-.fa-solid:hover {
-    color: #8d8a8a;
+/* login */
+.login img {
+    width: 30px;
+    float: left;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 25px;
+    cursor: pointer;
 }
